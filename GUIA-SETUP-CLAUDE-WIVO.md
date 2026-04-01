@@ -78,6 +78,46 @@ La interfaz web. Funciona igual que Claude Desktop pero en el browser.
 
 ---
 
+## Paso 1.5: Instalar los Skills de Wivo
+
+Los skills son modos expertos que Claude puede usar con el comando `/nombre-del-skill`. Incluyen contexto de la empresa, herramientas operativas y automatizaciones específicas de Wivo.
+
+```bash
+# Clonar el repositorio de skills
+git clone https://github.com/wivo-analytics/wivo-skills ~/claude-work/wivo-skills
+
+# Instalar
+cd ~/claude-work/wivo-skills
+chmod +x scripts/install.sh
+./scripts/install.sh
+
+# Reiniciar Claude Code para que los skills estén disponibles
+```
+
+**Skills instalados:**
+
+| Skill | Para qué |
+|-------|----------|
+| `/wivo-kb-core` | Contexto fundacional: qué es Wivo, ICP, arquitectura, competencia |
+| `/wivo-kb-ops` | Contexto operativo: roadmap, métricas, decisiones |
+| `/wivo-kb-voice` | Clientes, playbooks, tono de marca |
+| `/wivo-kb-writer` | Escribir y editar documentos del KB |
+| `/email-outlook-wivo` | Redactar y enviar correos por Outlook |
+| `/azure-monitor` | Monitoreo y diagnóstico de infraestructura Azure |
+| `/wivo-website` | Editar contenido del sitio web |
+
+**Para actualizar los skills:**
+
+```bash
+cd ~/claude-work/wivo-skills
+git pull
+./scripts/install.sh
+```
+
+Los skills se instalan en `~/.claude/skills/` y están disponibles en Claude Code CLI, VS Code y Claude Desktop.
+
+---
+
 ## Paso 2: Configurar la Metodología Wivo
 
 Aquí es donde Claude empieza a seguir nuestro estándar de desarrollo.
@@ -230,11 +270,12 @@ Necesito agregar una función que [algo simple relevante a tu proyecto].
 | 1 | Recibir invitación al plan Claude Team | Admin te invita |
 | 2 | Instalar Claude Desktop + Claude Code en VS Code | 10 min |
 | 3 | Leer el documento de metodología (`WIVO-AI-DEVELOPMENT-STANDARD.md`) | 20 min |
-| 4 | Clonar el/los repos en los que vas a trabajar | 5 min |
-| 5 | Verificar que el repo tiene `CLAUDE.md` (si no, crearlo con Paso 3) | 10 min |
-| 6 | Crear tu Proyecto en Claude Desktop para el repo | 5 min |
-| 7 | Hacer el test rápido (Paso 4) | 2 min |
-| 8 | Tomar tu primer issue y seguir el ciclo de 6 fases | — |
+| 4 | Instalar los skills de Wivo (Paso 1.5) | 5 min |
+| 5 | Clonar el/los repos en los que vas a trabajar | 5 min |
+| 6 | Verificar que el repo tiene `CLAUDE.md` (si no, crearlo con Paso 3) | 10 min |
+| 7 | Crear tu Proyecto en Claude Desktop para el repo | 5 min |
+| 8 | Hacer el test rápido (Paso 4) | 2 min |
+| 9 | Tomar tu primer issue y seguir el ciclo de 6 fases | — |
 
 ### Lo que necesitas saber
 
@@ -315,6 +356,18 @@ Pide al Tech Lead que te asigne un issue con etiqueta `good-first-issue`. Sigue 
                          └─────────────────┘  └──────────────────┘
               │                    │                     │
               └────────────────────┼────────────────────┘
+                                   │
+                                   │  + Skills disponibles en todas las superficies
+                                   │
+                    ┌──────────────┴───────────────┐
+                    │  wivo-skills                  │
+                    │  Repo: wivo-analytics/wivo-skills │
+                    │  Instalados en ~/.claude/skills/  │
+                    │                               │
+                    │  /wivo-kb-core  /azure-monitor│
+                    │  /wivo-kb-ops   /email-outlook│
+                    │  /wivo-kb-voice  ...          │
+                    └──────────────┬───────────────┘
                                    ▼
                     ┌──────────────────────────────┐
                     │  TODOS SIGUEN LA MISMA       │

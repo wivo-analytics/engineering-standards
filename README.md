@@ -9,6 +9,12 @@ Estándar de desarrollo de software con IA para toda la organización.
 | [WIVO-AI-DEVELOPMENT-STANDARD.md](WIVO-AI-DEVELOPMENT-STANDARD.md) | Metodología completa de desarrollo AI-First | Todo el equipo |
 | [GUIA-SETUP-CLAUDE-WIVO.md](GUIA-SETUP-CLAUDE-WIVO.md) | Guía paso a paso para instalar y configurar Claude | Nuevos integrantes |
 
+## Repositorios relacionados
+
+| Repositorio | Descripción |
+|-------------|-------------|
+| [wivo-analytics/wivo-skills](https://github.com/wivo-analytics/wivo-skills) | Skills organizacionales de Wivo para Claude Code (contexto, herramientas, automatizaciones) |
+
 ## Templates
 
 | Template | Uso |
@@ -24,7 +30,8 @@ Estándar de desarrollo de software con IA para toda la organización.
 
 1. Lee [WIVO-AI-DEVELOPMENT-STANDARD.md](WIVO-AI-DEVELOPMENT-STANDARD.md)
 2. Sigue [GUIA-SETUP-CLAUDE-WIVO.md](GUIA-SETUP-CLAUDE-WIVO.md) para configurar tu entorno
-3. Crea o actualiza el CLAUDE.md de tu repo usando los templates
+3. Instala los skills de Wivo desde [wivo-analytics/wivo-skills](https://github.com/wivo-analytics/wivo-skills)
+4. Crea o actualiza el CLAUDE.md de tu repo usando los templates
 
 ## Versionado
 
