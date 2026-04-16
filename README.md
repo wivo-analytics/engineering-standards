@@ -17,14 +17,33 @@ Estándar de desarrollo de software con IA para toda la organización.
 
 ## Templates
 
+### Meta
+
 | Template | Uso |
 |----------|-----|
 | [METHODOLOGY-BLOCK.md](templates/METHODOLOGY-BLOCK.md) | Bloque para inyectar en el CLAUDE.md de cada repo |
 | [CLAUDE_TEMPLATE.md](templates/CLAUDE_TEMPLATE.md) | Template base de CLAUDE.md por proyecto |
-| [bug_report.md](templates/bug_report.md) | Template de issue: Bug Report |
-| [feature_request.md](templates/feature_request.md) | Template de issue: Feature Request |
-| [technical_improvement.md](templates/technical_improvement.md) | Template de issue: Mejora Técnica |
 | [PULL_REQUEST_TEMPLATE.md](templates/PULL_REQUEST_TEMPLATE.md) | Template de Pull Request |
+
+### Issues — Técnicos (engineering)
+
+Usar cuando quien reporta es parte del equipo de ingeniería y puede describir archivos, stack, errores específicos.
+
+| Template | Uso |
+|----------|-----|
+| [bug_report.md](templates/bug_report.md) | Bug Report |
+| [feature_request.md](templates/feature_request.md) | Feature Request |
+| [technical_improvement.md](templates/technical_improvement.md) | Mejora Técnica |
+
+### Issues — No técnicos (producto, CS, ventas, operaciones, marketing)
+
+Usar cuando quien reporta es un colega no-eng de la organización. Evitan jerga técnica, no piden stack traces ni criterios verificables tipo "dado/cuando/entonces". El triage de ingeniería los traduce a tickets técnicos si hace falta.
+
+| Template | Uso |
+|----------|-----|
+| [user_bug_report.md](templates/non-technical/user_bug_report.md) | Reporte de algo que no funciona como se esperaba |
+| [business_request.md](templates/non-technical/business_request.md) | Solicitud de funcionalidad o mejora desde negocio |
+| [content_task.md](templates/non-technical/content_task.md) | Cambio de texto, traducción, o asset visual |
 
 ## Quick Start
 
