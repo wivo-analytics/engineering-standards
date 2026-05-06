@@ -18,6 +18,16 @@ assignees: ''
 2.
 3.
 
+## Medición y analítica
+> Obligatoria si la feature es user-facing. Si no aplica, justificar.
+
+- **¿Es user-facing?** Sí / No
+- **¿Cómo medimos éxito?** (KPI / métrica de negocio o adopción)
+- **Eventos de tracking requeridos:**
+  - `EVENT_NAME` — momento exacto, properties mínimas
+- **Funnel / dashboard a crear o actualizar:** (link Mixpanel/Segment)
+- **Si no aplica analítica, justificar:**
+
 ## Diseño / Mockups
 <!-- Screenshots, wireframes, Figma links. Arrastra imágenes aquí -->
 

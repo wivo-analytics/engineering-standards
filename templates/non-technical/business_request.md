@@ -22,6 +22,17 @@ assignees: ''
 ## ¿Cómo sabrías que funcionó?
 <!-- En lenguaje de negocio: "los clientes podrían hacer X", "bajaría el tiempo de Y", "el NPS subiría". No necesitas métricas técnicas -->
 
+## ¿Hay que medir adopción?
+<!-- Si el cambio es algo que verá el usuario final, ingeniería va a necesitar registrar eventos para saber si se usa. Marca lo que aplique y describe en lenguaje simple — eng lo traduce a eventos técnicos. -->
+
+- [ ] Sí, hay que medir si los usuarios la usan
+- [ ] Sí, hay que medir si reduce un problema (¿cuál?):
+- [ ] No aplica (justificar):
+
+**Acciones del usuario que sería útil registrar:**
+<!-- Ej: "cuando hacen click en el botón X", "cuando completan Y", "cuando entran a la sección Z". No necesitas pensar en eventos técnicos — basta con la acción. -->
+-
+
 ## ¿Hay un ejemplo de cómo debería verse?
 <!-- Links a Figma, Miro, captura de un competidor, o descripción escrita. Si no tienes, está bien -->
 

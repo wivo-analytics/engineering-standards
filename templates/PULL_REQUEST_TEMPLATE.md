@@ -34,6 +34,17 @@ Closes #
 - [ ] Sin hardcoded URLs/secrets
 - [ ] Build exitoso (`npm run build`)
 
+## Tracking & analítica
+<!-- Obligatoria si el PR es user-facing. Si no aplica, justificar. -->
+
+- [ ] **No aplica** — el cambio no es user-facing o no requiere medición. Justificación:
+- [ ] **Eventos agregados:**
+  - `EVENT_NAME` — archivo:línea, properties: { ... }
+- [ ] **Eventos modificados:**
+  -
+- [ ] **Funnel / dashboard actualizado en Mixpanel/Segment:** (link)
+- [ ] **Verificado en Segment Debugger:** los eventos llegan con properties correctas
+
 ## Notas para el Reviewer
 <!-- Contexto adicional, decisiones tomadas, trade-offs -->
 
